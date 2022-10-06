@@ -2,26 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class AddCard : MonoBehaviour
 {
     public Button addCardButton;
 
+    public GameObject DoneButton;
     public GameObject addCardObj;
     public GameObject removeCardObj;
     public GameObject openCardObj;
     public GameObject AnwersinputFieldObj;
     public GameObject QuestioninputFieldObj;
+    public List<Cards> cards = new List<Cards>();
 
 
 
     private Vector3 FinishPoint = new Vector3(-1, 2, 10);
     private Vector3 FinishPoint_input = new Vector3(1.3f, -2.2f, 10);
 
+    public void AddCardInStack()
+    {
+        if (AnwersinputFieldObj.GetComponent<TMP_InputField>().text != null & QuestioninputFieldObj.GetComponent<TMP_InputField>().text != null)
+        {
+            Debug.Log("Input Detected");
+            cards.Add(new Cards(AnwersinputFieldObj.GetComponent<TMP_InputField>().text, QuestioninputFieldObj.GetComponent<TMP_InputField>().text));
+        }    
+    }
+
     public void AddCardButton()
     {
         SetVisibleObj();
         StartCoroutine(MoveObj());
+        DoneButton.SetActive(true);
 
     }
 
@@ -44,12 +57,6 @@ public class AddCard : MonoBehaviour
         }
     }
 
-    public Cards AddCardInStack(string Question,string Answer)
-    {
-        Cards card = new Cards(Question, Answer);
-        return card;
-    }
-
     void Start()
     {
         
@@ -57,6 +64,11 @@ public class AddCard : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"Вопрос {openCardObj.transform.position}\n\tОтвет {AnwersinputFieldObj.transform.position}");
+        //Debug.Log($"Вопрос {openCardObj.transform.position}\n\tОтвет {AnwersinputFieldObj.transform.position}");
+        if (cards[0] != null)
+        {
+            Debug.Log(cards[cards.Count - 1].questions);
+        }
+        
     }
 }
