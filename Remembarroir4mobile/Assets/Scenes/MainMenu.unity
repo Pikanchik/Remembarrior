@@ -521,14 +521,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
+  m_sharedMaterial: {fileID: -8106968977776232125, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4278190335
   m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
+  m_fontSize: 72
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -675,17 +675,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: Enter question...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
+  m_sharedMaterial: {fileID: -8106968977776232125, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2150773298
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -702,10 +702,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
+  m_fontSize: 72
   m_fontSizeBase: 14
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
@@ -1513,8 +1513,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter answer...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4b802e679b0a91748b456c9d81e5c722, type: 2}
-  m_sharedMaterial: {fileID: -5836864982449545083, guid: 4b802e679b0a91748b456c9d81e5c722, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
+  m_sharedMaterial: {fileID: -8106968977776232125, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1648,8 +1648,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
+  m_sharedMaterial: {fileID: -8106968977776232125, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1869,6 +1869,7 @@ GameObject:
   - component: {fileID: 1310894895}
   - component: {fileID: 1310894894}
   - component: {fileID: 1310894893}
+  - component: {fileID: 1310894896}
   m_Layer: 5
   m_Name: OpenCardButton
   m_TagString: Untagged
@@ -1980,6 +1981,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310894891}
   m_CullTransparentMesh: 1
+--- !u!111 &1310894896
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310894891}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: ea982bef68a855f4a91dcaba2a34ba67, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: ea982bef68a855f4a91dcaba2a34ba67, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1350700876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,7 +2263,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_GlobalFontAsset: {fileID: 11400000, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
@@ -2337,10 +2354,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   addCardButton: {fileID: 1276038563}
   DoneButton: {fileID: 453734137}
-  addCardObj: {fileID: 1276038561}
+  addCardButtonObj: {fileID: 1276038561}
   removeCardObj: {fileID: 751970330}
   openCardObj: {fileID: 1310894891}
-  AnwersinputFieldObj: {fileID: 1765537625}
+  AnswersinputFieldObj: {fileID: 1765537625}
   QuestioninputFieldObj: {fileID: 1537347651}
 --- !u!1 &1682654912
 GameObject:
@@ -2512,6 +2529,7 @@ GameObject:
   - component: {fileID: 1765537629}
   - component: {fileID: 1765537628}
   - component: {fileID: 1765537627}
+  - component: {fileID: 1765537630}
   m_Layer: 5
   m_Name: Answers InputField (TMP)
   m_TagString: Untagged
@@ -2631,7 +2649,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_GlobalFontAsset: {fileID: 11400000, guid: f28d97c96ab2e75478f552aa7d719969, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
@@ -2676,6 +2694,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765537625}
   m_CullTransparentMesh: 1
+--- !u!111 &1765537630
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765537625}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: ea982bef68a855f4a91dcaba2a34ba67, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: ea982bef68a855f4a91dcaba2a34ba67, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2008657174
 GameObject:
   m_ObjectHideFlags: 0
